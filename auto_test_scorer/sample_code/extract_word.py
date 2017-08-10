@@ -19,8 +19,8 @@ tool = tools[0]
 # extract words (in english)
 res = tool.image_to_string(
         Image.open(args.img),
-        lang="jpn",
-        # lang="eng",
+        # lang="jpn",
+        lang="eng",
         builder=pyocr.builders.TextBuilder(tesseract_layout=6)
 )
 
